@@ -57,3 +57,20 @@ variable "create_key_ring" {
   default     = true
 }
 
+variable "uniform_bucket_level_access" {
+  description = "Enables Uniform bucket-level access to the bucket."
+  type        = bool
+  default     = true
+}
+
+variable "subnetwork_self_link" {
+  type        = string
+  description = "The subnetwork self link to which VMs will be assigned."
+  default     = ""
+}
+
+variable "network_self_link" {
+  type        = string
+  description = "The network self link to which VMs will be assigned."
+  default     = "default"
+}
